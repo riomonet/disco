@@ -8,6 +8,11 @@ The Disco Dance Floor Project
 - updating and storing mutable items
 
 ---
+Every time a componenet is rendered, that componenets function runs. 
+**useState** allows  values of variables to persist across function calls.
+React has a mechanism that mantains a table of values. The table track variables
+in the component function by the order in which they are declared, not by name.
+
 
 
 
