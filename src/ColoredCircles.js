@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Circle from './Circle'
-
+import ColorButtons from './ColorButtons';
 
 
 const ColoredCircles = () => {
@@ -13,11 +13,10 @@ const ColoredCircles = () => {
     
     return (
 	<div>
+	    <ColorButtons addCircle={addColor} options={['red','yellow','blue']}/>
 	    {colors.map( (color,idx) => (
 		<Circle color={color} idx={idx} key={idx} />
 	    ))}
-	    <button onClick={() => addColor('green') }> add Color </button>
-
 	</div>
     )
 }
