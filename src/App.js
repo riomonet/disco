@@ -3,8 +3,7 @@ import './App.css';
 import SimpleCounter from './simpleCounter';
 
 function App() {
-  return <SimpleCounter className="counter"/>
+  return <SimpleCounter />
 }
-
 
 export default App;

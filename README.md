@@ -20,19 +20,8 @@ in the component function by the **ORDER** in which they are declared, not by na
 
 `const [num, setNum] = useState(0)`
 
-A. 
-a. `setNum(n + 1)`
-b. `setNum(n + 1)`
-
-B.
-a. `setNum(n => n + 1)`
-b. `setNum(n => n + 1)`
-
-In  A there will be timing problems. b will happen before a is finsihed and the code 
-in A will end up setting num to 1 when the  desired state is 2
-
-In B b will wait till callback in a is executed and will handle the state correctly
-
-
-
-
+`   const upByTwo = () => {
+		setNum(num + 1); 
+		setNum(num + 1); // this line happens before previous line is finished. so this
+						 //routine ends up setting num to num + 1 not Num + 2
+    }`
