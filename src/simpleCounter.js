@@ -20,14 +20,12 @@ function SimpleCounter() {
     }
 
     // the format of the callback that is passed to state setter function
-    // the current state n is passed in and the new state is returned
+    // the current value of the state is passed in and the new state is returned
         const upByTwoBetter = () => {
 	setNum(n=>n+1); // 
 	setNum(n=>n+1);
 
    } 
-
-
     
     return (
 	<div className="counter">

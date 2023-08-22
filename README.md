@@ -19,7 +19,7 @@ in the component function by the **ORDER** in which they are declared, not by na
 
 `const [num, setNum] = useState(0)`
 
-`   const upByTwo = () => {
+`const upByTwo = () => {
 		setNum(num + 1); 
 		setNum(num + 1); // this line happens before previous line is finished. so this
 						 //routine ends up setting num to num + 1 not Num + 2
@@ -35,7 +35,7 @@ The  callback that is passed to state setter function
 format: pass in the  current stat and return  the new state is returned
 
 `	const upByTwoBetter = () => {
-		setNum(n=>n+1); // 
+		setNum(n=>n+1); 
 		setNum(n=>n+1);
 
    }`
