@@ -40,3 +40,4 @@ format: pass in the  current stat and return  the new state is returned
 
    }`
    
+### Mutation of mutable objects/arrays will not trigger a new rendering. You must create a new copy with desired alterations. 

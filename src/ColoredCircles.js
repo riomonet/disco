@@ -1,15 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Circle from './Circle'
 
 
 
 const ColoredCircles = () => {
-    const circles = ['cornflowerblue', 'peachpuff', 'lavender']
+
+    const [colors, setColors] = useState( ['cornflowerblue', 'peachpuff', 'lavender'])
+
+    let addColor = (newColor)  => {
+	setColors(c => [...c, newColor])
+    }
+    
     return (
 	<div>
-	    {circles.map((color,idx) => (
+	    {colors.map( (color,idx) => (
 		<Circle color={color} idx={idx} key={idx} />
 	    ))}
+	    <button onClick={() => addColor('green') }> add Color </button>
+
 	</div>
     )
 }
