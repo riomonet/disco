@@ -13,5 +13,4 @@ function Tile () {
     return <div className="Tile">
 
 	   </div>
-
 }

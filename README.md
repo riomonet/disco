@@ -15,9 +15,8 @@ in the component function by the **ORDER** in which they are declared, not by na
 > YOU CAN'T CALL HOOOS INSIDE OF LOOPS, CONDITIONALS, or NESTED FUNCTIONS. MUST BE AT THE
 > TOP LEVEL OF THE REACT COMPONENT.
 
-### Passing call back function to state setter function.
-You can pass a call back to a setter function. This ensures that the operations
-complet before conitinuing?
+### Updating states with callbacks
+
 
 `const [num, setNum] = useState(0)`
 
