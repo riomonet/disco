@@ -11,7 +11,7 @@ import Dice from './Dice'
 function App() {
     return (
 	   <div className="App" >
-	    <Dice numDice={2}/>
+	    <Dice numDice={12}/>
 	    </div>
     );
 }
